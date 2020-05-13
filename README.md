@@ -11,3 +11,5 @@
 ## Details Page
 ### This page shows title, authors, publishers and a link to google store books.
 ![Details](https://i.ibb.co/7gP1k8f/Screenshot-7.png)
+
+https://fybooks.herokuapp.com/
