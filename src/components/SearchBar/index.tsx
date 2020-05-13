@@ -13,7 +13,7 @@ const SearchBar = () => {
   const history = useHistory();
   const { state } = useContext(BooksContext);
   const { status, books: { totalItems } } = state.request;
-  const conditionalMessage = totalItems == 0 && status === (200 || 400 || 500) && !state.isLoading;
+  const conditionalMessage = totalItems === 0 && state.request.status !== 0;
 
   const submit = (event: any) => {
     event.preventDefault();
