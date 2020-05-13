@@ -7,6 +7,8 @@ const GlobalStyle = createGlobalStyle`
     src: url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap') format('truetype');
     font-weight: normal;
     font-style: normal;
+    margin: 0;
+    padding: 0;
   }
   body {
     margin: 0 auto;

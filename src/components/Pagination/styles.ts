@@ -8,6 +8,7 @@ export const Container = styled.section`
   padding: 0;
   justify-content: center; 
   background: ${theme.background};
+  width: 50vw
 }
   .pagination li {
     padding: 1rem;
@@ -15,6 +16,7 @@ export const Container = styled.section`
     text-decoration: none;
     list-style: none;
     cursor: pointer;
+    width: 14px;
   }
   .pagination>li>a,
   .pagination>li>span {
@@ -32,5 +34,8 @@ export const Container = styled.section`
   }
   [role=button] {
     cursor: pointer;
+  }
+  .break-me {
+    display: none;
   }
 `;

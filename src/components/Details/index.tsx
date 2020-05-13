@@ -42,8 +42,8 @@ const Details: React.FC<IProps> = ({ book }) => {
         </div>
         <div id="group2">
           <strong>authors: </strong>{listOfAuthors}<br /><br />
-          <strong>publishers: </strong><span>{volumeInfo?.publisher ?? noInformation}</span><br /><br />
-          <strong>Description</strong><br /><br />
+          <strong id="publish">publishers: </strong><span>{volumeInfo?.publisher ?? noInformation}</span><br /><br />
+          <strong id="dsc">Description</strong><br /><br />
           <section id="scroll-description">
             {volumeInfo?.description ? volumeInfo?.description.replace(/<[^>]*>|(&quot;)/g, '') : noInformation}
           </section>

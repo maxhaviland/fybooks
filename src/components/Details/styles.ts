@@ -43,8 +43,10 @@ export const Container = styled.div`
     #title { margin-top: -14rem; text-align: center; position:relative};
     #group1 { margin: 0 auto; }
     #group1 { grid-area: group0 };
-    #group2 { grid-area: group1; width: 80vw; };
-    #link { padding: 0; margin: 10px 0 10px 0; font-size: 26px; }
+    #group2 { grid-area: group1; width: 80vw; text-align: center; };
+    #link { padding: 0; margin: 10px 0 10px 0; font-size: 32px; }
+    #scroll-description{ text-align:justify }
+    #publish { margin-left: -2rem; }
 
   }
   

@@ -9,7 +9,6 @@ export const Container = styled.ul`
     font-size: 19px;
   }
   max-width: 1000px;
-
 `
 
 export const List = styled.ul`

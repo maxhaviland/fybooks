@@ -29,8 +29,8 @@ const Pagination: React.FC<IProps> = ({ totalItems }) => {
         nextLabel={">"}
         breakClassName={"break-me"}
         pageCount={totalPages}
-        marginPagesDisplayed={1}
-        pageRangeDisplayed={4}
+        marginPagesDisplayed={0}
+        pageRangeDisplayed={0}
         containerClassName={"pagination"}
         activeClassName={"active"}
         onPageChange={changePage}
