@@ -14,7 +14,7 @@ const Books = () => {
   const location = useLocation().search;
   const params = getParams(location);
 
-  useEffect(() => { action.requestBooks(params.book, params.page) }, [location])
+  useEffect(() => { location && action.requestBooks(params.book, params.page) }, [location])
 
   return (
     <If condition={!state.isLoading && books.totalItems > 0}>
