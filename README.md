@@ -1,6 +1,6 @@
 # fybooks
 - This project makes requests for the google book api.
-- A simple project developed with ReactJS and Typescript.
+- A simple project developed with ReactJS and Typescript (it's my first time using typescript).
 - Based on [github ideas](https://github.com/florinpop17/app-ideas).
 - I used the react context hook only to learn.
 
