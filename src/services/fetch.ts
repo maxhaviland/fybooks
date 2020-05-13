@@ -6,14 +6,14 @@ export const api: IApi = {
   options: {
     limit: 12
   }
-}
+};
 
 interface IApi {
   url: string;
   options: {
     limit: number
   }
-}
+};
 
 export interface IParams {
   book: string;
@@ -31,7 +31,7 @@ export async function fetchBook(id: string): Promise<IBook> {
     .then(book => book);
 
   return book;
-}
+};
 
 export async function fetchBooks(book: string, page: number): Promise<IRequest> {
   const query = `${api.url}?q=${book}/${page || 1}&maxResults=${api.options.limit}&orderBy=relevance`;
