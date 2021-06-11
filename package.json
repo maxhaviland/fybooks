@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --fix .",
+    "export": "next export",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
