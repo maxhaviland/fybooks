@@ -1,0 +1,38 @@
+name: Deploy CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+      
+    - run: npm ci
+    - run: npm run build && npm run export
+      #env:
+        #NEXT_PUBLIC_BASE_PATH: "/out"
+ 
+    - run: touch ./out/.nojekyll 
+    - run: touch ./out/CNAME
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@3.6.2
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: out # The folder the action should deploy.
+        CLEAN: true # Automatically remove deleted files from the deploy branch
