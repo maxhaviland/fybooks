@@ -1,9 +1,8 @@
 import { FC } from "react";
 import ImageNext from 'next/image';
 import StyledComponent from 'styled-components';
-import { CoverOptions } from "../../declarations/types";
 
-const Image = StyledComponent(ImageNext).attrs({
+const Image = StyledComponent('img').attrs({
   'data-testid': 'cover',
 })``;
 
@@ -14,13 +13,10 @@ interface CoverProps {
   width: string | number
 }
 
-const loader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 75}`
-}
 
 const Cover: FC<CoverProps> = ({ image, title, height, width }) => (
   <>
-    <Image loader={loader} width={width} height={height} src={image || '/images/cover.svg'} alt={title} />
+    <Image width={width} height={height} src={image || '/images/cover.svg'} alt={title} />
   </>
 )
 
