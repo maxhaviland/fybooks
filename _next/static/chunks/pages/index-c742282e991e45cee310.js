@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[8],{"/EDR":function(n,e,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return o("QeBL")}])},QeBL:function(n,e,o){"use strict";o.r(e);var t=o("nKUr"),_=o("Nhdc");e.default=function(){return Object(t.jsxs)(t.Fragment,{children:[Object(t.jsx)(_.b,{}),"fybooks :("]})}}},[["/EDR",0,2,1,3]]]);
